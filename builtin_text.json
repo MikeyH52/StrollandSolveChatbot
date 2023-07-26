@@ -1,0 +1,343 @@
+[
+  {
+    "id": "builtin_text-6Y4eMU",
+    "formData": {
+      "text$en": "Welcome to Stroll and Solve!",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T11:33:07.092Z",
+    "modifiedOn": "2022-10-11T11:33:07.092Z"
+  },
+  {
+    "id": "builtin_text-2G_4wc",
+    "formData": {
+      "text$en": "You have been greeted!",
+      "markdown$en": false,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T11:34:07.224Z",
+    "modifiedOn": "2022-10-11T11:34:07.224Z"
+  },
+  {
+    "id": "builtin_text-1PuIzB",
+    "formData": {
+      "text$en": "Checking stuff...",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T12:54:06.438Z",
+    "modifiedOn": "2022-10-11T12:54:06.438Z"
+  },
+  {
+    "id": "builtin_text-pplpkR",
+    "formData": {
+      "text$en": "You're in! Let's go!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T12:55:14.163Z",
+    "modifiedOn": "2022-10-11T12:55:14.163Z"
+  },
+  {
+    "id": "builtin_text-YfOEEp",
+    "formData": {
+      "text$en": "{{session.currentQuestion.question}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T12:56:37.784Z",
+    "modifiedOn": "2022-10-14T13:40:22.630Z"
+  },
+  {
+    "id": "builtin_text-vYimUm",
+    "formData": {
+      "text$en": "Correct answer!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T13:17:56.601Z",
+    "modifiedOn": "2022-10-11T13:17:56.601Z"
+  },
+  {
+    "id": "builtin_text-jN8clV",
+    "formData": {
+      "text$en": "Wrong answer!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T13:18:58.222Z",
+    "modifiedOn": "2022-10-11T13:18:58.222Z"
+  },
+  {
+    "id": "builtin_text-L4tP38",
+    "formData": {
+      "text$en": "Onto the next one!...",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-11T15:33:17.762Z",
+    "modifiedOn": "2022-10-14T13:45:42.078Z"
+  },
+  {
+    "id": "builtin_text-rXbPXa",
+    "formData": {
+      "text$en": "{{session.currentQuestion.type}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-17T13:40:49.148Z",
+    "modifiedOn": "2022-10-17T13:40:49.148Z"
+  },
+  {
+    "id": "builtin_text-Tg1414",
+    "formData": {
+      "text$en": "<span class=\"testClassZ\">{{session.currentQuestion.text}}</span>",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-17T13:42:35.336Z",
+    "modifiedOn": "2023-02-01T18:08:53.066Z"
+  },
+  {
+    "id": "builtin_text-J2LXPB",
+    "formData": {
+      "text$en": "**A FAITHFUL FACT**\n{{session.currentQuestion.text}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-17T13:43:06.391Z",
+    "modifiedOn": "2023-02-01T18:16:13.332Z"
+  },
+  {
+    "id": "builtin_text-BAyMy-",
+    "formData": {
+      "text$en": "**HINT:** {{session.currentQuestion.hint}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-17T14:24:47.012Z",
+    "modifiedOn": "2022-10-19T14:00:49.185Z"
+  },
+  {
+    "id": "builtin_text-teHyNx",
+    "formData": {
+      "text$en": "That’s incorrect, please have another go, you have {{session.currentQuestion.attempts}} more attempts left.\n\nRemember you can type \"hint\" for some help",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-17T15:00:47.362Z",
+    "modifiedOn": "2022-10-20T14:30:54.353Z"
+  },
+  {
+    "id": "builtin_text-ApRK1r",
+    "formData": {
+      "text$en": "Sorry that’s still incorrect and you’ve run out of chances. ",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-17T15:10:51.505Z",
+    "modifiedOn": "2022-10-20T14:32:12.455Z"
+  },
+  {
+    "id": "builtin_text-J-NDag",
+    "formData": {
+      "text$en": "That's the end of the game! Thank you for playing!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-17T15:17:32.942Z",
+    "modifiedOn": "2022-10-20T11:42:36.932Z"
+  },
+  {
+    "id": "builtin_text-RyZmDy",
+    "formData": {
+      "text$en": "**Stats**\nTotal Questions: {{session.questionCount}}\nIncorrect Answers: {{session.incorrectGuesses}}\nSkipped Questions: {{session.questionsSkipped}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-20T11:44:03.841Z",
+    "modifiedOn": "2022-10-20T11:45:37.232Z"
+  },
+  {
+    "id": "builtin_text-anvFKV",
+    "formData": {
+      "text$en": "{{session.currentQuestion.correctMessage}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-20T11:49:55.890Z",
+    "modifiedOn": "2022-11-25T13:50:37.239Z"
+  },
+  {
+    "id": "builtin_text-ZZi26u",
+    "formData": {
+      "text$en": "Let's go onto the next question...",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-20T13:51:20.552Z",
+    "modifiedOn": "2022-10-20T13:51:20.552Z"
+  },
+  {
+    "id": "builtin_text-jNlH3G",
+    "formData": {
+      "text$en": "Type \"hint\" if you need help",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-20T14:29:35.439Z",
+    "modifiedOn": "2022-10-20T14:29:35.439Z"
+  },
+  {
+    "id": "builtin_text-QZeb1l",
+    "formData": {
+      "text$en": "We’ll now move onto the next question, I’m sure you’ll do better answering the next one...",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-20T14:32:24.740Z",
+    "modifiedOn": "2022-10-20T14:32:24.740Z"
+  },
+  {
+    "id": "builtin_text-ecmhYE",
+    "formData": {
+      "text$en": "Stuff: {{event.raw}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-04T09:43:41.576Z",
+    "modifiedOn": "2022-11-04T13:18:20.525Z"
+  },
+  {
+    "id": "builtin_text-yP9Efo",
+    "formData": {
+      "text$en": "Invalid code",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-04T13:56:13.871Z",
+    "modifiedOn": "2022-11-04T13:56:13.871Z"
+  },
+  {
+    "id": "builtin_text-i6Kuyl",
+    "formData": {
+      "text$en": "Let the game begin! Get your team together and make your way to the Elgar statue in Cathedral Square - [Elgar Statue Worcester](https://goo.gl/maps/Rm99C3hEU8EhSc1d8). (top of the High Street, opposite the Cathedral)",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-21T14:36:51.797Z",
+    "modifiedOn": "2023-02-02T14:22:08.892Z"
+  },
+  {
+    "id": "builtin_text-hpcgMA",
+    "formData": {
+      "text$en": "Then await your first instructions from Captain Titus May, one of Charles II’s most trusted soldiers, and your guide on this mission.\nIf you, and your brave group are ready, then message START and good luck.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-21T14:42:19.646Z",
+    "modifiedOn": "2023-02-28T11:57:22.783Z"
+  },
+  {
+    "id": "builtin_text-zcUeGU",
+    "formData": {
+      "text$en": "blah blah blah",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-21T14:48:12.922Z",
+    "modifiedOn": "2022-11-21T14:48:12.922Z"
+  },
+  {
+    "id": "builtin_text-BTvgZb",
+    "formData": {
+      "text$en": "**Captain Titus May:** The Civil War continues to rage on, bluntly…we are losing, there seems like there is no alternative but to flee. Can you, my fellow soldiers of King Charles II, help us at our time of need? We need to solve the clues that have been set before us, clues that will lead to a four-digit passcode that will help our King escape from the clutches of the Cromwell’s approaching army. \nI will do my best in relaying the clues to you and guide you around the route, with the aid of maps and directions, as best I can.\nBe brave, be bold and be loyal to your King, solve the clues and work out the passcode… please do not fail us…",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-21T15:25:44.895Z",
+    "modifiedOn": "2023-02-02T14:19:23.168Z"
+  },
+  {
+    "id": "builtin_text-Tlrj96",
+    "formData": {
+      "text$en": "**Captain Titus May:** Congratulations! That’s the correct answer, you have allowed our blessed King to use the right passcode and safely pass through unnoticed, and have given him safe passage across the sea to France. This will not be forgotten, but for now, away with you, it is time to hide from Cromwell’s advancing troops. Lie low, rest up, our time will come again, goodbye my friend… and thank you!\n\nThanks so much for playing! We hope you enjoyed following the route, answering the clues, and finding out just a little more about the Faithful City of Worcester. We do hope you find lots more to do and take some time to visit the many attractions and pubs, cafés and restaurants, Worcester has to offer. Enjoy your time in the city!\n\nAlso remember to check your emails as we will send through your very own ‘mission log’, where you can check out, in a little more detail, the answers and other interesting facts about the city past and present.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-21T16:56:15.845Z",
+    "modifiedOn": "2023-02-28T15:29:10.853Z"
+  },
+  {
+    "id": "builtin_text-_CR3KL",
+    "formData": {
+      "text$en": "Your results",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-28T22:40:15.859Z",
+    "modifiedOn": "2022-12-28T22:40:15.859Z"
+  },
+  {
+    "id": "builtin_text-RALvd_",
+    "formData": {
+      "text$en": "Well done",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-28T22:40:39.471Z",
+    "modifiedOn": "2022-12-28T22:40:39.471Z"
+  },
+  {
+    "id": "builtin_text-DVYUKd",
+    "formData": {
+      "text$en": "success",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-28T22:44:58.356Z",
+    "modifiedOn": "2022-12-28T22:44:58.356Z"
+  },
+  {
+    "id": "builtin_text-J1hsyk",
+    "formData": {
+      "text$en": "fail",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-28T22:45:23.202Z",
+    "modifiedOn": "2022-12-28T22:45:23.202Z"
+  }
+]

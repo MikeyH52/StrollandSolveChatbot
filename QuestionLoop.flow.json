@@ -1,0 +1,419 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [
+      "init {\"name\":\"\",\"value\":\"\"}"
+    ],
+    "next": [
+      {
+        "condition": "session.valid    !== true",
+        "conditionType": "props",
+        "node": "#invalidCode"
+      }
+    ]
+  },
+  "startNode": "entry",
+  "description": "",
+  "nodes": [
+    {
+      "id": "38608a7d2f",
+      "name": "entry",
+      "onEnter": [
+        "loadQuestion {}"
+      ],
+      "onReceive": null,
+      "next": [
+        {
+          "condition": "user.questionIndex > session.totalItemCount",
+          "conditionType": "raw",
+          "node": "endQuiz"
+        },
+        {
+          "condition": "session.currentQuestion.type === 'question'",
+          "conditionType": "raw",
+          "node": "askQuestion"
+        },
+        {
+          "condition": "session.currentQuestion.type === 'fact'",
+          "conditionType": "raw",
+          "node": "DisplayFact"
+        }
+      ],
+      "type": "standard"
+    },
+    {
+      "id": "48697e29cc",
+      "name": "checkAnswer",
+      "next": [
+        {
+          "condition": "[\"proactive-trigger\", \"verify\"].includes(event.payload.type)",
+          "conditionType": "raw",
+          "node": "waitForAnswer"
+        },
+        {
+          "condition": "session.currentQuestion.answer.includes(event.payload.text.toLowerCase().trim())",
+          "conditionType": "raw",
+          "node": "checkForCorrectMessage"
+        },
+        {
+          "condition": "event.payload.text.toLowerCase() === \"hint\" && user.questionIndex !== session.questionCount",
+          "conditionType": "raw",
+          "node": "giveHint"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "reduceAttempts"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "2c1e6e157d",
+      "name": "askQuestion",
+      "next": [
+        {
+          "condition": "session.currentQuestion.trailingImage !== undefined",
+          "conditionType": "raw",
+          "node": "trailingImageQuestion"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "checkIfLastQuestion3"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Tg1414"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "23e6892e37",
+      "name": "correctAnswer",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "checkIfLastQuestion"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-anvFKV"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "928d51fc60",
+      "name": "reduceAttempts",
+      "next": [
+        {
+          "condition": "session.currentQuestion.attempts > 0",
+          "conditionType": "raw",
+          "node": "wrongAnswer"
+        },
+        {
+          "condition": "session.currentQuestion.attempts < 1",
+          "conditionType": "raw",
+          "node": "runOutOfAttempts"
+        }
+      ],
+      "onEnter": [
+        "reduceAttempts {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f4d036e118",
+      "name": "giveHint",
+      "next": [
+        {
+          "condition": "true",
+          "node": "waitForAnswer"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-BAyMy-"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "2ae498177c",
+      "name": "wrongAnswer",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "waitForAnswer"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-teHyNx"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "4fda970151",
+      "name": "runOutOfAttempts",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "checkIfLastQuestion2"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-ApRK1r",
+        "increaseSkipped {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "d8a61b94d3",
+      "name": "endQuiz",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "showStats"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Tlrj96"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "ea57afdb80",
+      "name": "showStats",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-RyZmDy"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "ac713d52b4",
+      "name": "waitForAnswer",
+      "next": [
+        {
+          "condition": "true",
+          "node": "checkAnswer"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "e8dd304c96",
+      "name": "checkIfLastQuestion",
+      "next": [
+        {
+          "condition": "session.questionIndex === session.totalItemCount",
+          "conditionType": "raw",
+          "node": "increaseQuestionIndex"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "increaseQuestionIndex"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a70a953ffb",
+      "name": "hintReminder",
+      "next": [
+        {
+          "condition": "true",
+          "node": "waitForAnswer"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-jNlH3G"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "3dd321a067",
+      "name": "node-48bd",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "increaseQuestionIndex"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-QZeb1l"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "f32c432690",
+      "name": "checkIfLastQuestion2",
+      "next": [
+        {
+          "condition": "user.questionIndex === session.questionCount",
+          "conditionType": "raw",
+          "node": "increaseQuestionIndex"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "node-48bd"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "2f43eeae40",
+      "name": "increaseQuestionIndex",
+      "next": [
+        {
+          "condition": "true",
+          "node": "entry"
+        }
+      ],
+      "onEnter": [
+        "increaseQuestionIndex {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "5732c4ae2c",
+      "name": "checkForCorrectMessage",
+      "next": [
+        {
+          "condition": "session.currentQuestion.correctMessage !== undefined",
+          "conditionType": "raw",
+          "node": "correctAnswer"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "checkIfLastQuestion"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-88af6c",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "tellFact",
+      "flow": "skills/choice-88af6c.flow.json",
+      "next": [
+        {
+          "caption": "User picked [true]",
+          "condition": "temp['skill-choice-ret-yuz7pze6z2'] == \"true\"",
+          "node": "increaseQuestionIndex"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "increaseQuestionIndex"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "41bfd250c4",
+      "name": "trailingImageQuestion",
+      "next": [
+        {
+          "condition": "true",
+          "node": "checkIfLastQuestion3"
+        }
+      ],
+      "onEnter": [
+        "showTrailingImage {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "a76f811e0b",
+      "name": "trailingImageFact",
+      "next": [
+        {
+          "condition": "true",
+          "node": "tellFact"
+        }
+      ],
+      "onEnter": [
+        "showTrailingImage {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "aec9bfb425",
+      "name": "DisplayFact",
+      "next": [
+        {
+          "condition": "session.currentQuestion.trailingImage !== undefined",
+          "conditionType": "raw",
+          "node": "trailingImageFact"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "tellFact"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-J2LXPB"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "45b961dbf7",
+      "name": "checkIfLastQuestion3",
+      "next": [
+        {
+          "condition": "user.questionIndex === session.totalItemCount",
+          "conditionType": "raw",
+          "node": "waitForAnswer"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "hintReminder"
+        }
+      ],
+      "onEnter": [],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

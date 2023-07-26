@@ -1,0 +1,40 @@
+[
+  {
+    "id": "builtin_single-choice-oJSaeh",
+    "formData": {
+      "dropdownPlaceholder$en": "",
+      "choices$en": [
+        {
+          "title": "HINT",
+          "value": "hint"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "If you need help, press the HINT button or type \"hint\""
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-10-19T13:15:28.162Z",
+    "modifiedOn": "2022-10-20T13:19:14.203Z"
+  },
+  {
+    "id": "builtin_single-choice-0216Ht",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "value": "true",
+          "title": "Continue"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": ""
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-12-28T21:43:38.802Z",
+    "modifiedOn": "2023-02-01T18:18:33.390Z"
+  }
+]

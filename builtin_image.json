@@ -1,0 +1,135 @@
+[
+  {
+    "id": "builtin_image-oyixO3",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/32gow86gay65a7qjhag3-Elgar%20Starting%20Point%20(2).png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-21T14:41:24.984Z",
+    "modifiedOn": "2022-11-21T14:41:24.984Z"
+  },
+  {
+    "id": "builtin_image-NeYIwx",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/gmvz0wi58vcsn671ines-AlternativeRoute1.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-21T16:08:49.866Z",
+    "modifiedOn": "2022-11-21T16:11:48.342Z"
+  },
+  {
+    "id": "builtin_image-glYlWk",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/6bxelh782j2l1sy0p8eh-AlternativeRoute2.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-21T16:23:25.517Z",
+    "modifiedOn": "2022-11-21T16:23:25.517Z"
+  },
+  {
+    "id": "builtin_image-bTEN6y",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/2hubo9x6oouy4myo5l7r-MarinaToCanalPath.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-21T16:23:34.408Z",
+    "modifiedOn": "2022-11-21T16:23:34.408Z"
+  },
+  {
+    "id": "builtin_image-ZlUsDC",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/6zv0z25m4opjopmhvhjl-CommanderyAndFortRoyalHill.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-11-21T16:29:43.556Z",
+    "modifiedOn": "2022-11-21T16:29:43.556Z"
+  },
+  {
+    "id": "builtin_image-OHIhss",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/l9wng6in4gfhjo71n2y0-Fun%20Fact%203%20NEW.jpg",
+      "title$en": "Fun Fact 3 Image"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-25T10:31:24.571Z",
+    "modifiedOn": "2023-01-25T10:31:24.571Z"
+  },
+  {
+    "id": "builtin_image-6vrlLM",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/nx8uoxjwrrbxrpuyy6fj-Fun%20Fact%207.jpg",
+      "title$en": "Fun Fact 7 Image"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-25T10:33:35.458Z",
+    "modifiedOn": "2023-01-25T10:33:35.458Z"
+  },
+  {
+    "id": "builtin_image-dDEdJY",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/3musz86vj770y7lh0991-Fun%20Fact%2010%20NEW.jpg",
+      "title$en": "Fun Fact 10 Image"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-25T10:36:18.005Z",
+    "modifiedOn": "2023-01-25T10:36:18.005Z"
+  },
+  {
+    "id": "builtin_image-KWRAu_",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/mb99d5y86yb96wk656w0-Sidbury.png"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-26T09:50:41.466Z",
+    "modifiedOn": "2023-01-26T09:50:41.466Z"
+  },
+  {
+    "id": "builtin_image-govdWr",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/k5pnch2kvhyonf7gchzc-vesta.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-26T12:34:00.278Z",
+    "modifiedOn": "2023-01-26T12:34:00.278Z"
+  },
+  {
+    "id": "builtin_image-itb1Lg",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/jz8leqce7zyqe4ii6vs1-cromwell.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-26T12:36:16.517Z",
+    "modifiedOn": "2023-01-26T12:36:16.517Z"
+  },
+  {
+    "id": "builtin_image-iIJdA1",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/4vb4vp8h0cplcmgni3u5-elgar.jpg"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-27T12:25:38.477Z",
+    "modifiedOn": "2023-01-27T12:25:38.477Z"
+  },
+  {
+    "id": "builtin_image-8NMIBf",
+    "formData": {
+      "typing$en": true,
+      "image$en": "/api/v1/bots/BOT_ID_PLACEHOLDER/media/xrbzujwqn0q0y4mn1e60-sauce.JPG"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-27T12:49:31.974Z",
+    "modifiedOn": "2023-01-27T12:49:31.974Z"
+  }
+]

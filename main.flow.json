@@ -1,0 +1,99 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "session.valid === true",
+          "conditionType": "raw",
+          "node": "validCode"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "invalidCode"
+        }
+      ],
+      "onEnter": [
+        "init {\"window\":\"{{window}}\"}",
+        "say #!builtin_text-6Y4eMU",
+        "say #!builtin_text-1PuIzB",
+        "builtin/wait {\"delay\":\"3000\"}"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "c494313c4f",
+      "name": "validCode",
+      "next": [
+        {
+          "condition": "user.questionIndex > 1",
+          "conditionType": "raw",
+          "node": "QuestionLoop.flow.json#entry"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "welcomeMessage"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-pplpkR",
+        "getQuestionsFromSpreadsheet {}"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "4bb20b5bcc",
+      "name": "invalidCode",
+      "next": [],
+      "onEnter": [
+        "say #!builtin_text-yP9Efo"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "4d00497ee5",
+      "name": "welcomeMessage",
+      "next": [
+        {
+          "condition": "event.payload.text.toLowerCase() === 'start'",
+          "conditionType": "raw",
+          "node": "introMessage"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-i6Kuyl",
+        "say #!builtin_image-oyixO3",
+        "say #!builtin_text-hpcgMA"
+      ],
+      "onReceive": [],
+      "type": "standard"
+    },
+    {
+      "id": "0d9d3dcb2d",
+      "name": "introMessage",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "QuestionLoop.flow.json#entry"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-BTvgZb"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}
